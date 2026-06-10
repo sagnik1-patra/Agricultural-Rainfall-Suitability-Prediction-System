@@ -1,0 +1,4 @@
+Model,Accuracy
+Random Forest,0.9523809523809523
+Gradient Boosting,0.9523809523809523
+Neural Network,0.761904776096344

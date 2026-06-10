@@ -1,0 +1,25 @@
+{
+    "project_name": "Agricultural Rainfall Suitability Prediction System using CSA",
+    "author": "Sagnik Patra",
+    "dataset": "C:\\Users\\NXTWAVE\\Downloads\\Agricultural Rainfall Suitability Prediction System\\DailyRainfallDataRaigadMaharashtra.csv",
+    "algorithm": "Crow Search Algorithm Feature Selection + Random Forest + Neural Network",
+    "total_records": 102,
+    "total_features": 16,
+    "selected_features": [
+        "Daily Rainfall (m.m)",
+        "Day",
+        "DayOfYear",
+        "Rainfall_Lag_1",
+        "Rainfall_7Day_MA"
+    ],
+    "best_csa_fitness": 0.99375,
+    "random_forest_accuracy": 1.0,
+    "neural_network_accuracy": 0.8095238208770752,
+    "classes": [
+        "Low Water Crops Suitable",
+        "Pulses Suitable",
+        "Rice Suitable",
+        "Sugarcane Suitable"
+    ],
+    "saved_prefix": "csa_"
+}

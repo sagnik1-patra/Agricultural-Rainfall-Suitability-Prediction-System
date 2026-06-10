@@ -1,0 +1,34 @@
+project: Agricultural Rainfall Suitability Prediction System using CSA
+author: Sagnik Patra
+dataset_path: C:\Users\NXTWAVE\Downloads\Agricultural Rainfall Suitability Prediction
+  System\DailyRainfallDataRaigadMaharashtra.csv
+base_directory: C:\Users\NXTWAVE\Downloads\Agricultural Rainfall Suitability Prediction
+  System
+prefix: csa_
+optimization:
+  algorithm: Crow Search Algorithm
+  population_size: 20
+  generations: 30
+  awareness_probability: 0.1
+  flight_length: 2
+models:
+  random_forest:
+    n_estimators: 300
+    max_depth: 10
+    random_state: 42
+  neural_network:
+    epochs: 100
+    batch_size: 8
+    optimizer: adam
+    loss: categorical_crossentropy
+selected_features:
+- Daily Rainfall (m.m)
+- Day
+- DayOfYear
+- Rainfall_Lag_1
+- Rainfall_7Day_MA
+classes:
+- Low Water Crops Suitable
+- Pulses Suitable
+- Rice Suitable
+- Sugarcane Suitable

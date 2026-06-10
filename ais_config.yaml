@@ -1,0 +1,31 @@
+project: Agricultural Rainfall Suitability Prediction System using AIS
+author: Sagnik Patra
+dataset_path: C:\Users\NXTWAVE\Downloads\Agricultural Rainfall Suitability Prediction
+  System\DailyRainfallDataRaigadMaharashtra.csv
+base_directory: C:\Users\NXTWAVE\Downloads\Agricultural Rainfall Suitability Prediction
+  System
+prefix: ais_
+optimization:
+  algorithm: Artificial Immune System
+  population_size: 20
+  generations: 30
+  clone_factor: 5
+  mutation_rate: 0.15
+models:
+  random_forest:
+    n_estimators: 300
+    max_depth: 10
+    random_state: 42
+  neural_network:
+    epochs: 100
+    batch_size: 8
+    optimizer: adam
+selected_features:
+- Day
+- Month
+- Rainfall_7Day_MA
+classes:
+- Low Water Crops Suitable
+- Pulses Suitable
+- Rice Suitable
+- Sugarcane Suitable

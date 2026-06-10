@@ -1,0 +1,41 @@
+project: Agricultural Rainfall Suitability Prediction System
+author: Sagnik Patra
+dataset_path: C:\Users\NXTWAVE\Downloads\Agricultural Rainfall Suitability Prediction
+  System\DailyRainfallDataRaigadMaharashtra.csv
+base_directory: C:\Users\NXTWAVE\Downloads\Agricultural Rainfall Suitability Prediction
+  System
+models:
+  random_forest:
+    n_estimators: 300
+    max_depth: 10
+    random_state: 42
+  gradient_boosting:
+    random_state: 42
+  neural_network:
+    epochs: 100
+    batch_size: 8
+    optimizer: adam
+    loss: categorical_crossentropy
+features:
+- Daily Rainfall (m.m)
+- Progressive (m.m)
+- Day
+- Month
+- Year
+- DayOfYear
+- Week
+- Rainfall_Lag_1
+- Rainfall_Lag_2
+- Rainfall_Lag_3
+- Rainfall_3Day_MA
+- Rainfall_7Day_MA
+- Rainfall_15Day_MA
+- Rainfall_30Day_MA
+- Weekly_Rainfall
+- Monthly_Rainfall
+target: Crop_Suitability
+classes:
+- Low Water Crops Suitable
+- Pulses Suitable
+- Rice Suitable
+- Sugarcane Suitable

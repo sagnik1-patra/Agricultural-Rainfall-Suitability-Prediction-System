@@ -1,0 +1,47 @@
+{
+    "project_name": "Agricultural Rainfall Suitability Prediction System",
+    "author": "Sagnik Patra",
+    "dataset": "C:\\Users\\NXTWAVE\\Downloads\\Agricultural Rainfall Suitability Prediction System\\DailyRainfallDataRaigadMaharashtra.csv",
+    "total_records": 102,
+    "features_used": [
+        "Daily Rainfall (m.m)",
+        "Progressive (m.m)",
+        "Day",
+        "Month",
+        "Year",
+        "DayOfYear",
+        "Week",
+        "Rainfall_Lag_1",
+        "Rainfall_Lag_2",
+        "Rainfall_Lag_3",
+        "Rainfall_3Day_MA",
+        "Rainfall_7Day_MA",
+        "Rainfall_15Day_MA",
+        "Rainfall_30Day_MA",
+        "Weekly_Rainfall",
+        "Monthly_Rainfall"
+    ],
+    "target": "Crop_Suitability",
+    "classes": [
+        "Low Water Crops Suitable",
+        "Pulses Suitable",
+        "Rice Suitable",
+        "Sugarcane Suitable"
+    ],
+    "random_forest_accuracy": 0.9523809523809523,
+    "gradient_boosting_accuracy": 0.9523809523809523,
+    "neural_network_accuracy": 0.761904776096344,
+    "saved_files": [
+        "crop_suitability_model.h5",
+        "crop_random_forest_model.pkl",
+        "crop_gradient_boosting_model.pkl",
+        "crop_scaler.pkl",
+        "crop_label_encoder.pkl",
+        "crop_prediction.csv",
+        "crop_result.csv",
+        "crop_planning_rainfall_analytics.csv",
+        "crop_accuracy_comparison.csv",
+        "crop_classification_report.csv",
+        "crop_feature_importance.csv"
+    ]
+}
