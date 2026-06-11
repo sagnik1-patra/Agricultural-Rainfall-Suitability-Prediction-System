@@ -1,6 +1,6 @@
 # 🌧️ Agricultural Rainfall Suitability Prediction System
 
-## 🧠 Crop Planning using Rainfall Analytics, Bio-Inspired Optimization Algorithms and Machine Learning
+## 🧠 Crop Planning using Rainfall Analytics, Bio-Inspired Optimization Algorithms and Machine Learning 
 
 ---
 
